@@ -3,15 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>miao</title>
 </head>
-<script language="javascript">
-    var domain = "www.miaowh.com";
-    var src = window.location.href;
-    var prtc = src.substring(0, src.indexOf(':'));
-    var target = src.substring(src.indexOf('/', src.indexOf(':') + 3));
-    window.location.href = prtc + "://" + domain + target;
-    location.href = prtc + "://" + domain + target;
+<script language=javascript>
+    if (document.domain == 'www.ybmj.tech')
+        this.location = "http://www.miaowh.com" + this.location.pathname + this.location.search;
 </script>
 
 <body>
